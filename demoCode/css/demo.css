@@ -1,0 +1,58 @@
+/*this is my css code repository*/
+
+
+/******清除浮动****************/
+.clearfix:before, .clearfix:after {content:"";display:table}
+.clearfix:after {clear:both}
+/*****************************/
+
+/*********wap透明弹窗******/
+.ibox {
+    display:none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    overflow-y: auto;
+    opacity: 1;
+    background: rgba(0,0,0,0.8);
+    z-index: 4;
+}
+/*************************/
+
+/*隐藏input type=number 尾部的小上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="number"]{-moz-appearance:textfield;}
+/****************************************/
+
+/*透明渐变效果*/
+.opacity {
+    opacity: 0.4;
+    background:-moz-linear-gradient(top,#fff,#56C5F9);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fff), to(#56C5F9));
+}
+/***************/
+
+/*阴影效果*/
+.shadow {
+    background-color: #f3564a;
+    box-shadow: 0 0.4em 0 0 #d33e32;
+}
+/**********/
+
+/*wap密码可见按钮效果*/
+.eye_icon {
+    display: inline-block;
+    width: 23px;
+    height: 16px;
+    background: url(../../../static/img/mobile/wap_214bgs.png) no-repeat 0px -16px;
+}
+.eye_icon.red {
+    background: url(../../../static/img/mobile/wap_214bgs.png) no-repeat 0 0;
+}
+/******************/
