@@ -531,7 +531,23 @@
 			"file": "demoCode/js/demo.js",
 			"settings":
 			{
-				"buffer_size": 6609,
+				"buffer_size": 7418,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "demoCode/js/angularCode.js",
+			"settings":
+			{
+				"buffer_size": 694,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/study/git/learngit/readme.txt",
+			"settings":
+			{
+				"buffer_size": 1561,
 				"line_ending": "Windows"
 			}
 		}
@@ -815,7 +831,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 108.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"E:\\work\\branch\\caolong1\\dashboard_datav1.1",
@@ -1018,7 +1034,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1039,13 +1055,14 @@
 						],
 						"settings":
 						{
+							"is_preview": true,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1224.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1055,15 +1072,15 @@
 					"file": "demoCode/js/demo.js",
 					"settings":
 					{
-						"buffer_size": 6609,
+						"buffer_size": 7418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6207,
-								6207
+								7416,
+								7416
 							]
 						],
 						"settings":
@@ -1074,7 +1091,66 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5843.0,
+						"translation.y": 6707.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "demoCode/js/angularCode.js",
+					"settings":
+					{
+						"buffer_size": 694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								116
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/study/git/learngit/readme.txt",
+					"settings":
+					{
+						"buffer_size": 1561,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"is_xml": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

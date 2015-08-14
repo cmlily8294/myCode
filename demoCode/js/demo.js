@@ -263,3 +263,46 @@ $.fn.visiable = function(){
     }
 };
 
+//阻止事件冒泡
+var move = function(e) {
+    e.preventDefault && e.preventDefault();
+    e.returnValue = false;
+    e.stopPropagation && e.stopPropagation();
+    return false;
+}
+
+//wap端取消禁止滚动
+function remliste(ele) {
+    ele.removeEventListener('touchmove', move);
+}
+//wap端禁止滚动
+function addliste(ele) {
+    ele.addEventListener('touchmove', move);
+}
+
+
+//作用域问题/////////////////
+window.val = 1;
+var json = {
+     val:10,
+     dbl: function () {
+         this.val*=2;
+   }
+};
+json.dbl();
+var dbl = json.dbl;
+dbl();
+json.dbl.call(window);
+alert(window.val+json.val)
+//////////////////////////////
+
+//////对象深度复制
+var deepCopy= function(source) { 
+var result={};
+for (var key in source) {
+      result[key] = typeof source[key]===’object’? deepCoyp(source[key]): source[key];
+   } 
+   return result; 
+}
+//////////////////
+
