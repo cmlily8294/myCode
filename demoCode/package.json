@@ -1,0 +1,25 @@
+{
+  "name": "democode",
+  "version": "1.0.0",
+  "description": "this is my demoCode",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmlily8294/myCode.git"
+  },
+  "keywords": [
+    "cmlily",
+    "myCode"
+  ],
+  "author": "cl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmlily8294/myCode/issues"
+  },
+  "homepage": "https://github.com/cmlily8294/myCode#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.3.0"
+  }
+}

@@ -56,3 +56,26 @@ input[type="number"]{-moz-appearance:textfield;}
     background: url(../../../static/img/mobile/wap_214bgs.png) no-repeat 0 0;
 }
 /******************/
+
+/*******箭头icon**********/
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent;
+    overflow: hidden;
+    border-left-color: #ef5a50;
+    left: 12px;
+    margin-top: -9px;
+}
+
+.arrow.down {
+    border-color: transparent;
+    border-top-color: #ef5a50;
+    left: 9px;
+    margin-top: -7px;
+}
+/******************/

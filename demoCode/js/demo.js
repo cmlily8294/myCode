@@ -241,6 +241,7 @@ Util.renderChart = function (elementId,options) {
 
 /**
  * 判断某元素是否在页面可见的jquery插件
+ * @author cl
  * @return {[type]} [description]
  */
 $.fn.visiable = function(){
@@ -305,4 +306,33 @@ for (var key in source) {
    return result; 
 }
 //////////////////
+
+/**
+* 返回顶部插件
+*/
+$.fn.goToTop = function(obj){
+    var defaultObj={
+            fn : function(){},
+            static : false,
+            ele : document.body.scrollTop ? $(document.body) : $(document.documentElement),
+            eletop : 0
+        },
+        options = $.extend({},obj,defaultObj);
+    $(this).click(function(){
+        options.ele = document.body.scrollTop ? $(document.body) : $(document.documentElement);
+        options.ele.animate({scrollTop:0},{easing: 'swing',duration: 600, complete: function(){
+            options.static = false;
+        },step: function(num){
+            options.static = true;
+            options.eletop = num;        
+        }});
+        options.fn();
+    });
+    $(window).scroll(function(){
+        if(options.static == true && options.ele.scrollTop() > options.eletop){
+           options.ele.stop(); //如果滚动条触发事件，则停止动画
+        }
+    });
+}
+///////////////
 

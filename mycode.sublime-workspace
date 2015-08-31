@@ -528,10 +528,18 @@
 			}
 		},
 		{
+			"file": "demoCode/php/demo.php",
+			"settings":
+			{
+				"buffer_size": 451,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "demoCode/js/demo.js",
 			"settings":
 			{
-				"buffer_size": 7418,
+				"buffer_size": 8339,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +547,7 @@
 			"file": "demoCode/js/angularCode.js",
 			"settings":
 			{
-				"buffer_size": 694,
+				"buffer_size": 700,
 				"line_ending": "Windows"
 			}
 		},
@@ -548,6 +556,22 @@
 			"settings":
 			{
 				"buffer_size": 1561,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "demoCode/package.json",
+			"settings":
+			{
+				"buffer_size": 539,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "demoCode/gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 633,
 				"line_ending": "Windows"
 			}
 		}
@@ -559,16 +583,76 @@
 		"selected_items":
 		[
 			[
+				"git",
+				"Git: Log Current File"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"git:sta",
+				"Git: Status"
+			],
+			[
+				"git:qc",
+				"Git: Quick Commit"
+			],
+			[
+				"git:",
+				"Git: Graph All"
+			],
+			[
+				"git:add",
+				"Git: Add Current File"
+			],
+			[
+				"git:stat",
+				"Git: Status"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git:log",
+				"Git: Log All"
+			],
+			[
+				"git:c",
+				"Git: Quick Commit"
+			],
+			[
+				"git:st",
+				"Git: Status"
+			],
+			[
+				"git:status",
+				"Git: Status"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"git:s",
+				"Git: Status"
+			],
+			[
 				"clo",
 				"File: Close All"
 			],
 			[
 				"clol",
 				"File: Close All"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"rem",
@@ -696,6 +780,10 @@
 	},
 	"file_history":
 	[
+		"/E/frontEndDev/mycode/myCode/demoCode/dist/js/angularCode.js",
+		"/E/work/grunt/Gruntfile.js",
+		"/E/work/grunt/package.json",
+		"/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
 		"/E/frontEndDev/mycode/myCode/css/demo.css",
 		"/E/frontEndDev/mycode/myCode/index.html",
 		"/E/study/git/learngit/readme.txt",
@@ -819,11 +907,7 @@
 		"/E/work/branch/caolong1/dashboard_datav1.1/views/common/breadCrumb.php",
 		"/E/frontEndDev/demo/grid/test.css",
 		"/E/work/branch/caolong1/itouzi/public/static/css/event/stats_1.css",
-		"/E/work/branch/caolong1/itouzi/public/static/js/event/data_statistics.js",
-		"/E/work/branch/caolong1/itouzi/views/itzdefault/event/newDataStatistics.tpl",
-		"/E/work/branch/caolong1/dashboard_datav1.1/protected/modules/account/controllers/ExpresspaymentBanklimitController.php",
-		"/E/work/branch/caolong1/dashboard_datav1.1/protected/modules/account/controllers/AccountCashController.php",
-		"/E/frontEndDev/苗圃移动系统/sql/gylc/WebRoot/js/mini/mini-fs-ext.js"
+		"/E/work/branch/caolong1/itouzi/public/static/js/event/data_statistics.js"
 	],
 	"find":
 	{
@@ -831,7 +915,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 108.0,
 		"where_history":
 		[
 			"E:\\work\\branch\\caolong1\\dashboard_datav1.1",
@@ -877,6 +961,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"圆角",
 			"itz",
 			"util",
 			"itz.wap.",
@@ -1003,8 +1088,7 @@
 			"format",
 			"subDebtproductType",
 			" width=\"12.5%\"",
-			" width=\"16.66666%\"",
-			"16.66666"
+			" width=\"16.66666%\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1034,7 +1118,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1049,72 +1133,69 @@
 						"selection":
 						[
 							[
-								213,
-								213
+								11,
+								12
 							]
 						],
 						"settings":
 						{
-							"is_preview": true,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1224.0,
+						"translation.y": 288.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "demoCode/js/demo.js",
+					"file": "demoCode/php/demo.php",
 					"settings":
 					{
-						"buffer_size": 7418,
+						"buffer_size": 451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7416,
-								7416
+								56,
+								1
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 6707.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "demoCode/js/angularCode.js",
+					"file": "demoCode/js/demo.js",
 					"settings":
 					{
-						"buffer_size": 694,
+						"buffer_size": 8339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								116,
-								116
+								6190,
+								6190
 							]
 						],
 						"settings":
 						{
-							"is_xml": false,
+							"is_preview": true,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
@@ -1128,6 +1209,37 @@
 				},
 				{
 					"buffer": 3,
+					"file": "demoCode/js/angularCode.js",
+					"settings":
+					{
+						"buffer_size": 700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"is_xml": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "/E/study/git/learngit/readme.txt",
 					"settings":
 					{
@@ -1138,8 +1250,8 @@
 						"selection":
 						[
 							[
-								62,
-								62
+								930,
+								930
 							]
 						],
 						"settings":
@@ -1148,6 +1260,63 @@
 							"is_xml": false,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "demoCode/package.json",
+					"settings":
+					{
+						"buffer_size": 539,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "demoCode/gulpfile.js",
+					"settings":
+					{
+						"buffer_size": 633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								459,
+								459
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1192,6 +1361,10 @@
 	"output.exec":
 	{
 		"height": 136.0
+	},
+	"output.git":
+	{
+		"height": 154.0
 	},
 	"replace":
 	{
