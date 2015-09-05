@@ -523,7 +523,7 @@
 			"file": "demoCode/css/demo.css",
 			"settings":
 			{
-				"buffer_size": 1285,
+				"buffer_size": 1712,
 				"line_ending": "Windows"
 			}
 		},
@@ -542,38 +542,6 @@
 				"buffer_size": 8339,
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "demoCode/js/angularCode.js",
-			"settings":
-			{
-				"buffer_size": 700,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/E/study/git/learngit/readme.txt",
-			"settings":
-			{
-				"buffer_size": 1561,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "demoCode/package.json",
-			"settings":
-			{
-				"buffer_size": 539,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "demoCode/gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 633,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -583,16 +551,40 @@
 		"selected_items":
 		[
 			[
-				"git",
-				"Git: Log Current File"
+				"git:s",
+				"Git: Status"
+			],
+			[
+				"statu",
+				"Git: Status"
 			],
 			[
 				"git:push",
-				"Git: Push"
+				"Git: Push Current Branch"
+			],
+			[
+				"git:commit",
+				"Git: Quick Commit"
+			],
+			[
+				"git:add",
+				"Git: Add..."
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"git:st",
+				"Git: Status"
 			],
 			[
 				"git:sta",
 				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Log Current File"
 			],
 			[
 				"git:qc",
@@ -601,10 +593,6 @@
 			[
 				"git:",
 				"Git: Graph All"
-			],
-			[
-				"git:add",
-				"Git: Add Current File"
 			],
 			[
 				"git:stat",
@@ -631,19 +619,7 @@
 				"Git: Quick Commit"
 			],
 			[
-				"git:st",
-				"Git: Status"
-			],
-			[
 				"git:status",
-				"Git: Status"
-			],
-			[
-				"statu",
-				"Git: Status"
-			],
-			[
-				"git:s",
 				"Git: Status"
 			],
 			[
@@ -780,13 +756,18 @@
 	},
 	"file_history":
 	[
+		"/E/frontEndDev/mycode/myCode/demoCode/js/angularCode.js",
+		"/E/study/git/learngit/readme.txt",
+		"/E/frontEndDev/mycode/myCode/demoCode/package.json",
+		"/E/frontEndDev/mycode/myCode/demoCode/gulpfile.js",
+		"/E/frontEndDev/mycode/myCode/.gitignore",
+		"/E/frontEndDev/mycode/myCode/demoCode/node_modules/gulp-uglify/package.json",
 		"/E/frontEndDev/mycode/myCode/demoCode/dist/js/angularCode.js",
 		"/E/work/grunt/Gruntfile.js",
 		"/E/work/grunt/package.json",
 		"/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
 		"/E/frontEndDev/mycode/myCode/css/demo.css",
 		"/E/frontEndDev/mycode/myCode/index.html",
-		"/E/study/git/learngit/readme.txt",
 		"/E/itfreer/work/html/index.html",
 		"/E/itfreer/work/html/loginSuc.html",
 		"/E/itfreer/work/html/css/index.css",
@@ -902,12 +883,7 @@
 		"/E/work/branch/caolong1/itouzi/views/itzdefault/event/itzUtils.js",
 		"/E/work/branch/caolong1/dashboard_datav1.1/public/js/commonY.js",
 		"/E/work/branch/caolong1/dashboard_datav1.1/public/js/doT.js",
-		"/E/work/branch/caolong1/dashboard_datav1.1/views/dataSystem/dataSystem/ajaxregistFromData.php",
-		"/E/work/branch/caolong1/dashboard/protected/lib/classes/DController.php",
-		"/E/work/branch/caolong1/dashboard_datav1.1/views/common/breadCrumb.php",
-		"/E/frontEndDev/demo/grid/test.css",
-		"/E/work/branch/caolong1/itouzi/public/static/css/event/stats_1.css",
-		"/E/work/branch/caolong1/itouzi/public/static/js/event/data_statistics.js"
+		"/E/work/branch/caolong1/dashboard_datav1.1/views/dataSystem/dataSystem/ajaxregistFromData.php"
 	],
 	"find":
 	{
@@ -915,7 +891,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 108.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"E:\\work\\branch\\caolong1\\dashboard_datav1.1",
@@ -1118,7 +1094,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1126,15 +1102,15 @@
 					"file": "demoCode/css/demo.css",
 					"settings":
 					{
-						"buffer_size": 1285,
+						"buffer_size": 1712,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11,
-								12
+								1712,
+								1712
 							]
 						],
 						"settings":
@@ -1145,7 +1121,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 288.0,
+						"translation.y": 1008.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1169,6 +1145,7 @@
 						"settings":
 						{
 							"is_xml": false,
+							"origin_encoding": "ASCII",
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1189,134 +1166,16 @@
 						"selection":
 						[
 							[
-								6190,
-								6190
+								325,
+								325
 							]
 						],
 						"settings":
 						{
-							"is_preview": true,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "demoCode/js/angularCode.js",
-					"settings":
-					{
-						"buffer_size": 700,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								265,
-								265
-							]
-						],
-						"settings":
-						{
-							"is_preview": true,
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/E/study/git/learngit/readme.txt",
-					"settings":
-					{
-						"buffer_size": 1561,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								930,
-								930
-							]
-						],
-						"settings":
-						{
-							"is_preview": true,
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "demoCode/package.json",
-					"settings":
-					{
-						"buffer_size": 539,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"is_preview": true,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "demoCode/gulpfile.js",
-					"settings":
-					{
-						"buffer_size": 633,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								459,
-								459
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

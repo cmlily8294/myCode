@@ -1,4 +1,5 @@
-
+<?php
+/* get useragent
 $useragent = strtolower($_SERVER["HTTP_USER_AGENT"]);     
 // ipad  
 $is_ipad = strripos($useragent,'ipad');
@@ -12,3 +13,5 @@ $is_uc = strripos($useragent, 'ucbrowser');
 $is_android_uc = ereg('^ucweb.*adr',$useragent);
 // weixin internal browser
 $is_weixin = strripos($useragent,'MicroMessenger');
+*/
+
