@@ -531,15 +531,39 @@
 			"file": "demoCode/php/demo.php",
 			"settings":
 			{
-				"buffer_size": 451,
+				"buffer_size": 1901,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1432,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "demoCode/js/demo.js",
 			"settings":
 			{
-				"buffer_size": 8339,
+				"buffer_size": 9717,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/index.html",
+			"settings":
+			{
+				"buffer_size": 11841,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/sources/js/grid.js",
+			"settings":
+			{
+				"buffer_size": 51742,
 				"line_ending": "Windows"
 			}
 		}
@@ -551,24 +575,64 @@
 		"selected_items":
 		[
 			[
+				"git:push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git:l",
+				"Git: Log Current File"
+			],
+			[
+				"git:sta",
+				"Git: Status"
+			],
+			[
+				"git:d",
+				"Git: Diff Current File"
+			],
+			[
+				"git:log",
+				"Git: Log All"
+			],
+			[
+				"git:c",
+				"Git: Quick Commit"
+			],
+			[
+				"git:ad",
+				"Git: Add..."
+			],
+			[
 				"git:s",
 				"Git: Status"
+			],
+			[
+				"git:",
+				"Git: Log All"
+			],
+			[
+				"git:pus",
+				"Git: Push"
+			],
+			[
+				"git:status",
+				"Git: Status"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"git:add",
+				"Git: Add..."
 			],
 			[
 				"statu",
 				"Git: Status"
 			],
 			[
-				"git:push",
-				"Git: Push Current Branch"
-			],
-			[
 				"git:commit",
 				"Git: Quick Commit"
-			],
-			[
-				"git:add",
-				"Git: Add..."
 			],
 			[
 				"sta",
@@ -579,20 +643,12 @@
 				"Git: Status"
 			],
 			[
-				"git:sta",
-				"Git: Status"
-			],
-			[
 				"git",
 				"Git: Log Current File"
 			],
 			[
 				"git:qc",
 				"Git: Quick Commit"
-			],
-			[
-				"git:",
-				"Git: Graph All"
 			],
 			[
 				"git:stat",
@@ -609,18 +665,6 @@
 			[
 				"insta",
 				"Package Control: Install Package"
-			],
-			[
-				"git:log",
-				"Git: Log All"
-			],
-			[
-				"git:c",
-				"Git: Quick Commit"
-			],
-			[
-				"git:status",
-				"Git: Status"
 			],
 			[
 				"clo",
@@ -756,16 +800,18 @@
 	},
 	"file_history":
 	[
+		"/E/xampp/apache/conf/itouzi/vhosts-dashboard.conf",
+		"/E/frontEndDev/mycode/myCode/.gitignore",
+		"/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/E/frontEndDev/mycode/myCode/demoCode/js/angularCode.js",
 		"/E/study/git/learngit/readme.txt",
 		"/E/frontEndDev/mycode/myCode/demoCode/package.json",
 		"/E/frontEndDev/mycode/myCode/demoCode/gulpfile.js",
-		"/E/frontEndDev/mycode/myCode/.gitignore",
 		"/E/frontEndDev/mycode/myCode/demoCode/node_modules/gulp-uglify/package.json",
 		"/E/frontEndDev/mycode/myCode/demoCode/dist/js/angularCode.js",
 		"/E/work/grunt/Gruntfile.js",
 		"/E/work/grunt/package.json",
-		"/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
 		"/E/frontEndDev/mycode/myCode/css/demo.css",
 		"/E/frontEndDev/mycode/myCode/index.html",
 		"/E/itfreer/work/html/index.html",
@@ -881,9 +927,7 @@
 		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/builds/images/skins/blue/readme",
 		"/E/work/luna/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/fjkz/help/style/js/mini/mini-src.js",
 		"/E/work/branch/caolong1/itouzi/views/itzdefault/event/itzUtils.js",
-		"/E/work/branch/caolong1/dashboard_datav1.1/public/js/commonY.js",
-		"/E/work/branch/caolong1/dashboard_datav1.1/public/js/doT.js",
-		"/E/work/branch/caolong1/dashboard_datav1.1/views/dataSystem/dataSystem/ajaxregistFromData.php"
+		"/E/work/branch/caolong1/dashboard_datav1.1/public/js/commonY.js"
 	],
 	"find":
 	{
@@ -937,6 +981,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ajaxtype",
+			"ajaxType",
+			"/",
 			"圆角",
 			"itz",
 			"util",
@@ -1061,10 +1108,7 @@
 			"                    \n",
 			"formatting",
 			"number_format",
-			"format",
-			"subDebtproductType",
-			" width=\"12.5%\"",
-			" width=\"16.66666%\""
+			"format"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1094,7 +1138,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1115,6 +1159,7 @@
 						],
 						"settings":
 						{
+							"is_preview": true,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
@@ -1131,22 +1176,53 @@
 					"file": "demoCode/php/demo.php",
 					"settings":
 					{
-						"buffer_size": 451,
+						"buffer_size": 1901,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								1
+								508,
+								508
 							]
 						],
 						"settings":
 						{
 							"is_xml": false,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 241.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 1432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1155,30 +1231,92 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "demoCode/js/demo.js",
 					"settings":
 					{
-						"buffer_size": 8339,
+						"buffer_size": 9717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								325,
-								325
+								8368,
+								8368
 							]
 						],
 						"settings":
 						{
+							"is_preview": true,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 7873.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/index.html",
+					"settings":
+					{
+						"buffer_size": 11841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								360,
+								360
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"is_xml": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/sources/js/grid.js",
+					"settings":
+					{
+						"buffer_size": 51742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 144.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

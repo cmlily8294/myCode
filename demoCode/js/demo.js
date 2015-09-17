@@ -336,3 +336,46 @@ $.fn.goToTop = function(obj){
 }
 ///////////////
 
+///判断浏览器///
+ie678 = !+"\v1" ;
+ie678 = !-[1,];//IE9预览版中失效
+ie678 ='\v'=='v' ;
+ie678 = ('a~b'.split(/(~)/))[1] == "b"
+ie678 = 0.9.toFixed(0) == "0"
+IE8 = window.toStaticHTML
+IE9 = window.msPerformance 
+ie = !!document.recalc
+ie = !!window.VBArray
+ie = !!window.ActiveXObject
+ie678 = 0//@cc_on+1;
+ie = !!window.createPopup;
+ie = /*@cc_on!@*/!1;
+ie = document.expando;//document.all在opera firefox的古老版本也存在
+ie = /\w/.test('\u0130') //由群里的abcd友情提供
+
+ie6 = !"1"[0] //利用IE6或IE5的字符串不能使用数组下标的特征
+ie8 = !!window.XDomainRequest;
+ie9 =  document.documentMode && document.documentMode === 9;
+//自创，基于条件编译的嗅探脚本，IE会返回其JS引擎的版本号，非IE返回0
+var ieVersion = eval("''+/*@cc_on"+" @_jscript_version@*/-0")*1
+ie9 = ieVersion === 5.9
+ie8 = ieVersion === 5.8
+ie7 = ieVersion === 5.7
+ie6 = ieVersion === 5.6
+ie5 = ieVersion === 5.5
+//https://developer.mozilla.org/En/Windows_Media_in_Netscape
+netscape = !!window.GeckoActiveXObject 
+gecko  = !!window.netscape //包括firefox
+firefox = !!window.Components
+firefox = !!window.updateCommands
+firefox = !!window.sidebar
+safari = !!(navigator.vendor && navigator.vendor.match(/Apple/))
+safari = window.openDatabase && !window.chrome;
+chrome= !!(window.chrome && window.google)
+opera=!!window.opera ;
+//傲游2 3
+maxthon = /maxthon/i.test(navigator.userAgent)
+//360安全浏览器
+is360se = /360se/i.test(navigator.userAgent)
+//////////////////////////////////////////////////////////
+
