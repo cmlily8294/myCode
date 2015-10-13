@@ -520,50 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "demoCode/css/demo.css",
-			"settings":
-			{
-				"buffer_size": 1712,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "demoCode/php/demo.php",
-			"settings":
-			{
-				"buffer_size": 1901,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 1432,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "demoCode/js/demo.js",
 			"settings":
 			{
-				"buffer_size": 9717,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/index.html",
-			"settings":
-			{
-				"buffer_size": 11841,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/sources/js/grid.js",
-			"settings":
-			{
-				"buffer_size": 51742,
+				"buffer_size": 12328,
 				"line_ending": "Windows"
 			}
 		}
@@ -571,9 +531,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 83.0,
 		"selected_items":
 		[
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
 			[
 				"git:push",
 				"Git: Push Current Branch"
@@ -800,9 +764,22 @@
 	},
 	"file_history":
 	[
+		"/E/xampp/apache/conf/httpd.conf",
+		"/E/xampp/apache/conf/myblog/vhosts-myblog.conf",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/study/wordpress/wp-activate.php",
+		"/E/study/wordpress/wp-blog-header.php",
+		"/E/xampp/apache/conf/itouzi/vhosts-coding.conf",
+		"/E/xampp/mysql/bin/my.ini",
+		"/E/frontEndDev/mycode/myCode/demoCode/css/demo.css",
+		"/E/frontEndDev/mycode/myCode/demoCode/php/demo.php",
+		"/E/frontEndDev/mycode/myCode/demoCode/sql/mysql.sql",
+		"/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/E/frontEndDev/mycode/myCode/demoCode/js/demo.js",
+		"/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/index.html",
+		"/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/sources/js/grid.js",
 		"/E/xampp/apache/conf/itouzi/vhosts-dashboard.conf",
 		"/E/frontEndDev/mycode/myCode/.gitignore",
-		"/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
 		"/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/E/frontEndDev/mycode/myCode/demoCode/js/angularCode.js",
 		"/E/study/git/learngit/readme.txt",
@@ -858,7 +835,6 @@
 		"/E/study/git/learingit2/learngit/readme.txt",
 		"/E/study/git/learngit/111.php",
 		"/E/study/git/gitTest/README.md",
-		"/C/Windows/System32/drivers/etc/hosts",
 		"/E/work/branch/caolong1/dashboard_datav1.1/protected/modules/itzChannel/controllers/ItzChannelDataController.php",
 		"/E/work/branch/caolong1/dashboard_datav1.1/protected/modules/itzChannel/controllers/ItzLandingPageController.php",
 		"/E/work/branch/caolong1/dashboard_datav1.1/public/js/dataSiteall.js",
@@ -905,7 +881,6 @@
 		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/grid/multi-header.html",
 		"/E/work/coding/itouzi/public/a.php",
 		"/E/xampp/php/php.ini",
-		"/E/xampp/apache/conf/itouzi/vhosts-coding.conf",
 		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/grid/data/dynamic-header.jsp",
 		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/grid/move-column-extend.html",
 		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/grid/themes/custom.html",
@@ -916,18 +891,7 @@
 		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/grid/data/simple.json",
 		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/pagination/jquery_pagination/sample.html",
 		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/paging/simple.html",
-		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/pagination/jquery_pagination/adapter.js",
-		"/E/frontEndDev/jquery/jquery-easyui-EDT-1.4-build1/jquery-easyui-1.4/src/jquery.datebox.js",
-		"/E/frontEndDev/demo/grid/test.html",
-		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/grid/data/json.jsp",
-		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/sources/js/common.js",
-		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/grid/themes/bootstrap.html",
-		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/grid/row-hover.html",
-		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/builds/js/lang/grid.zh-CN.min.js",
-		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/builds/images/skins/blue/readme",
-		"/E/work/luna/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/fjkz/help/style/js/mini/mini-src.js",
-		"/E/work/branch/caolong1/itouzi/views/itzdefault/event/itzUtils.js",
-		"/E/work/branch/caolong1/dashboard_datav1.1/public/js/commonY.js"
+		"/E/frontEndDev/jquery/jquery.bsgrid-1.36/examples/pagination/jquery_pagination/adapter.js"
 	],
 	"find":
 	{
@@ -981,6 +945,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"itz.wap",
+			"Util.",
+			"itz.wap.",
+			"127.0.0.1 myblog.com",
+			"\\",
+			"80",
 			"ajaxtype",
 			"ajaxType",
 			"/",
@@ -1102,13 +1072,7 @@
 			"14.285",
 			" width=\"14.285%\"",
 			" width=\"7.1428%\"",
-			"8.33333",
-			"number_format",
-			"+=",
-			"                    \n",
-			"formatting",
-			"number_format",
-			"format"
+			"8.33333"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1138,185 +1102,34 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "demoCode/css/demo.css",
-					"settings":
-					{
-						"buffer_size": 1712,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1712,
-								1712
-							]
-						],
-						"settings":
-						{
-							"is_preview": true,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1008.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "demoCode/php/demo.php",
-					"settings":
-					{
-						"buffer_size": 1901,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								558,
-								558
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 241.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/john/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
-					"settings":
-					{
-						"buffer_size": 1432,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"is_preview": true,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "demoCode/js/demo.js",
 					"settings":
 					{
-						"buffer_size": 9717,
+						"buffer_size": 12328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8368,
-								8368
+								11043,
+								11043
 							]
 						],
 						"settings":
 						{
-							"is_preview": true,
 							"origin_encoding": "UTF-8",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7873.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/index.html",
-					"settings":
-					{
-						"buffer_size": 11841,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								360,
-								360
-							]
-						],
-						"settings":
-						{
-							"is_preview": true,
-							"is_xml": false,
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/E/frontEndDev/mycode/bsgrid/jquery.bsgrid/sources/js/grid.js",
-					"settings":
-					{
-						"buffer_size": 51742,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								354,
-								354
-							]
-						],
-						"settings":
-						{
-							"is_preview": true,
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 144.0,
+						"translation.y": 9955.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

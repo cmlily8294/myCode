@@ -2,7 +2,7 @@
 /**
  * 去除两边空白
  */
-Util.trim = function(value) {
+util.trim = function(value) {
 	return value ? value.toString().replace(/^\s|\s$/,'') : value;
 }
 
@@ -11,7 +11,7 @@ Util.trim = function(value) {
  * @param  {[type]} value [description]
  * @return {[type]}       [description]
  */
-Util.checkphone = function(value) {
+util.checkphone = function(value) {
 	return /^\+?(86)?1\d{10}$/.test(value);
 };
 
@@ -20,7 +20,7 @@ Util.checkphone = function(value) {
  * @param  {[type]} value [description]
  * @return {[type]}       [description]
  */
-Util.checkpwd = function(value) {
+util.checkpwd = function(value) {
 	return /^[a-zA-Z0-9_+=\-@#~,.\[\]()!%^*$]+$/.test(value) && value.length>5 && value.length<17;
 };
 
@@ -29,7 +29,7 @@ Util.checkpwd = function(value) {
  * @param  {[type]} value [description]
  * @return {[type]}       [description]
  */
-Util.checkcard = function(value) {
+util.checkcard = function(value) {
 	return /^\d{15,19}$/.test(value);
 };
 /**
@@ -37,10 +37,10 @@ Util.checkcard = function(value) {
  * @param  {[type]} value [description]
  * @return {[type]}       [description]
  */
-Util.checkvcode = function(value) {
+util.checkvcode = function(value) {
 	return /^\d{6}$/.test(value);
 };
-Util.checkleft = function(value) {
+util.checkleft = function(value) {
 	return /(^0\.(0[1-9]|[1-9]\d*)$)|(^[1-9]\d*((\.\d{1,2})|\d*)$)/.test(value);
 };
 /**
@@ -48,7 +48,7 @@ Util.checkleft = function(value) {
  * @param  {[type]} value [description]
  * @return {[type]}       [description]
  */
-Util.checkcode = function(value) {
+util.checkcode = function(value) {
 	return /^[a-zA-Z0-9]{4}$/.test(value);
 };
 
@@ -57,7 +57,7 @@ Util.checkcode = function(value) {
  * @param  {[type]} value [description]
  * @return {[type]}       [description]
  */
-Util.checkcash = function(value) {
+util.checkcash = function(value) {
 	return /^\d+(\.\d{1,2})?$/g.test(value) && !isNaN(Number(value)) && Number(value)>0;
 };
 /**
@@ -65,7 +65,7 @@ Util.checkcash = function(value) {
  * @param  {[type]} value [description]
  * @return {[type]}       [description]
  */
-Util.checkname = function(value) {
+util.checkname = function(value) {
     return /^[\u4e00-\u9fa5]+$/.test(value) && value.length>1 && value.length<7;
 };
 
@@ -76,7 +76,7 @@ Util.checkname = function(value) {
  * 依赖jquery
  * @type {Object}
  */
-Util.JPlaceHolder = {
+util.JPlaceHolder = {
     //检测
     _check : function(){
         return 'placeholder' in document.createElement('input');
@@ -128,7 +128,7 @@ Util.JPlaceHolder = {
 /**
  * 格式化数字,千分位逗号
  */
-Util.numFormat = function(nStr){
+util.numFormat = function(nStr){
     nStr += '';  
     x = nStr.split('.');  
     x1 = x[0];  
@@ -145,7 +145,7 @@ Util.numFormat = function(nStr){
  * @param  {[Number]} num [最近的第几天]
  * @return {[String]}     [description]
  */
-Util.getRecentDay = function (num,formatStr) {
+util.getRecentDay = function (num,formatStr) {
     var n = num || 1;
     var f = formatStr || 'yyyy-MM-dd';
     var date = new Date();
@@ -176,7 +176,7 @@ Date.prototype.format = function(f){
  * 获取cookie值
  * @param  {[type]} c_name
  */
-Util.getCookie = function (c_name) {
+util.getCookie = function (c_name) {
   if (document.cookie.length > 0) {
     c_start = document.cookie.indexOf(c_name+"=");
     if (c_start != -1) {
@@ -198,7 +198,7 @@ Util.getCookie = function (c_name) {
  * @param {[type]} value      [cookie值]
  * @param {[type]} expiredays [失效时间]
  */
-Util.setCookie = function (c_name,value,expiredays){
+util.setCookie = function (c_name,value,expiredays){
   var exdate = new Date();
   exdate.setDate(exdate.getDate()+expiredays);
   document.cookie = c_name+ "=" + value+
@@ -208,7 +208,7 @@ Util.setCookie = function (c_name,value,expiredays){
 /**
  * 监测是否是数组
  */
-Util.isArray = function (o) {
+util.isArray = function (o) {
     return Object.prototype.toString.call(o) === '[object Array]';
 }
 
@@ -220,14 +220,14 @@ Util.isArray = function (o) {
  * @param  {[String]} elementId [dom元素Id]
  * @param  {[Object]} options   [图表参数]
  */
-Util.renderChart = function (elementId,options) {
+util.renderChart = function (elementId,options) {
     var chartElement = document.getElementById(elementId);
     if (!chartElement) {
-        console.error('function "Util.renderChart" can not find Element: '+elementId);
+        console.error('function "util.renderChart" can not find Element: '+elementId);
         return;
     }
     if (!echarts) {
-        console.error('function "Util.renderChart" need echarts');
+        console.error('function "util.renderChart" need echarts');
         return ;
     };
     //初始化echarts
@@ -235,7 +235,7 @@ Util.renderChart = function (elementId,options) {
     if (options) {
         chart.setOption(options);
     }else{
-        console.error('function "Util.renderChart" can not find parameter: options');
+        console.error('function "util.renderChart" can not find parameter: options');
     };
 }
 
@@ -378,4 +378,110 @@ maxthon = /maxthon/i.test(navigator.userAgent)
 //360安全浏览器
 is360se = /360se/i.test(navigator.userAgent)
 //////////////////////////////////////////////////////////
+
+/*
+ * 简单的秒单位倒计时实现
+*/
+util.countDown = function(op) {
+    
+    if(!op || !op.obj || op.obj.length<1) return;
+    
+    if(!(this instanceof util.countDown)) {
+        return new util.countDown(op);
+    }
+    
+    var me = this;
+    //TODO 去除Jquery的$.extend
+    me.op = $.extend({
+        start: 60
+        , startEl: ''
+        , endEl: ''
+        , property: 'html'
+    }, op);
+
+    me.st = new Date().getTime();
+    me.span = me.st;
+    me.cur = me.op.start;   
+    var _c = [];
+
+    var _cd = function(){
+    
+        me.op.obj[me.op.property](me.op.startEl + (me.cur<10&&me.cur>0 ? '0'+me.cur : me.cur) + me.op.endEl);
+        
+        var _td = new Date(),
+            _temp = _td.getTime(),
+            _span = _temp - me.st;
+
+        if(_span < me.op.start*1000 && _temp-me.span>1000) {
+            me.cur = me.op.start - Math.floor(_span/1000);
+            me.span = _temp;
+        }
+        if(_span >= me.op.start*1000) {
+            me.cur = 0;
+            while(_c && _c.length>0) {
+                util.clearrqa(_c.pop());
+            }
+            typeof me.op.callback == 'function' && me.op.callback();
+            return ;
+        }
+        _c.push(util.rqa(_cd, 1000));
+    }
+    _cd();
+};
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/**
+ * 数字从小到大跑
+ */
+util.numberSpark = function(obj, startEl, endEl, dot) {
+    
+    var o = $(obj ? obj : '');
+
+    if(o.length < 1) return;
+    
+    if(!(this instanceof util.numberSpark)) {
+        return new util.numberSpark(obj, startEl, endEl, dot);
+    }
+        
+    var that = this;
+
+    that.obj = o,
+    that.no = that.obj.data('spark');
+
+    that.arr = [];
+
+    if(isNaN(that.no)) {return false;}
+
+    that.frag = '',
+    that.intv = 0,
+    that.flag = 0,
+    that.sn = '';
+
+    for(var l=that.no.toString().length,i=l-1;i>=0;i--) {
+        that.sn = that.no.toString().charAt(i);
+        that.arr.push(that.sn);
+    }
+
+    that.spark = function() {
+        that.frag = '';
+        if(that.flag > 9) {
+            clearTimeout(that.intv);
+            that.obj.attr('spark-done', true);
+            return;
+        }
+        for(var l=that.arr.length,i=l-1; i>=0; i--) {
+            that.arr[i] = Number(that.arr[i]);
+            that.arr[i] = that.arr[i]+1>9 ? 0 : (that.arr[i] + 1);
+            that.frag += (startEl||'') + that.arr[i] + (endEl||'');
+            if(dot && i%3==0 && i!=0) {
+                that.frag += dot;
+            }
+        }
+        that.obj.html();
+        that.obj.html(that.frag);
+        that.flag++;
+        that.intv = setTimeout(that.spark, 40);
+    }
+};
 
