@@ -79,3 +79,9 @@ input[type="number"]{-moz-appearance:textfield;}
     margin-top: -7px;
 }
 /******************/
+
+/******* radial-gradient的最新写法 **********/
+.background{
+    background-image: radial-gradient(circle farthest-corner at top right, #151A21, #515B70);
+}
+/******************/

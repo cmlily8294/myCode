@@ -485,3 +485,55 @@ util.numberSpark = function(obj, startEl, endEl, dot) {
     }
 };
 
+function getUrlParams(url) {
+    url = url || window.location.search;
+    var tmpArr = [];
+    var params = {};
+    var urlArr = url.split('?');
+    if (urlArr.length > 1) {
+        tmpArr = urlArr[1].split('#')[0].split('&');
+    }
+    if (tmpArr.length > 0 && tmpArr[0] !== '') {
+        for (var i = 0; i < tmpArr.length; i++) {
+            var tmp = tmpArr[i].split('=');
+            params[tmp[0]] = tmp[1];
+        }
+    }
+    return params;
+};
+
+
+/**
+ * 获取最近时间格式化
+ * @param {number} time
+ */
+function recentFormat(time) {
+  if (!time) {
+    return '';
+  }
+  const now = new Date().getTime();
+  const todayTime = new Date(new Date().toLocaleDateString()).getTime();
+  const diffHour = Math.floor((now - time) / 3600000);
+  if (diffHour < 1) {
+    return '刚刚';
+  } else if (diffHour < 10) {
+    return `${diffHour}小时以前`;
+  } else if (time >= todayTime) {
+    return '今天';
+  } else if (time >= todayTime - 86400000) {
+    return '昨天';
+  }
+  return utils.formatDate(time, 'yyyy年MM月dd日');
+}
+
+/**
+ * 获取随机数
+ * @return {[type]} [description]
+ */
+function getUUID() {
+  function S4() {
+    return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
+  }
+  return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
+}
+

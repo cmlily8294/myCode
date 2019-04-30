@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .container{
+            display: flex;
+            /*flex-direction定义主轴方向，有四个值：row | row-reverse | column | column-reverse*/
+            flex-direction: row;
+            /*flex-wrap有三个值： nowrap | wrap | wrap-reverse(换行，第一行在下，从下往上)*/
+            flex-wrap: nowrap;
+            /*flex-flow是flex-direction和flex-wrap的简写*/
+            flex-flow: row nowrap;
+            /*定义在主轴上的对齐方式，flex-start 左对齐 | flex-end 右对齐 | center 居中 | space-between 两端对齐 | space-around 每个项目两侧间隔相等*/
+            justify-content: flex-start;
+            /*定义项目在交叉轴上的对齐方式 stretch 占满高度| flex-start 顶部对齐 | flex-end 底部对齐 | center 居中对齐 | baseline 第一行文字对齐*/
+            align-items: center;
+            /*有多轴时的对齐方式，取值同上*/
+            align-content: stretch;
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            background: #89479b;
+        }
+        .item{
+            /*排列顺序，值越小越靠前*/
+            order: 0;
+            /*定义项目的放大比例*/
+            flex-grow: 1;
+            /*定义项目的缩小比例，默认为1，即如果空间不足，该项目将缩小*/
+            flex-shrink: 1;
+            /*定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，
+             *计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。
+             */
+            flex-basis: auto;
+            /*flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选*/
+            flex: 1 1 auto;
+            /*align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch*/
+            align-self: auto;
+            height: 100px;
+            background: #e38612;
+        }
+        .item.lastorder{
+            order: 1;
+        }
+        .item.grow{
+            /*其他项目将等分剩余空间*/
+            flex-grow: 2;
+        }
+        .item.shrink{
+            /*其他都是1，则其他的都缩小，此项目不缩小*/
+            flex-shrink: 0;
+        }
+
+        .three-layout{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            width: 800px;
+            height: 600px;
+            margin: 20px auto;
+        }
+        .menu{
+            width: 200px;
+            height: 300px;
+            background: #89479b;
+        }
+        .content{
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item grow">4</div>
+        <div class="item shrink">5</div>
+        <div class="item">6</div>
+        <div class="item lastorder">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+
+    <div class="three-layout">
+        <div class="menu">1</div>
+        <div class="content">2</div>
+        <div class="menu">3</div>
+    </div>
+
+</body>
+</html>
