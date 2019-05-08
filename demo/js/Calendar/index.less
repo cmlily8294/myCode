@@ -1,0 +1,99 @@
+:global {
+  .tinker-calendar{
+    font-size: 32px;
+    background: #4b77b0;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 0;
+    position: relative;
+    &-title{
+      line-height: 60px;
+      color: #fff;
+      &-content{
+        display: inline-block;
+      }
+    }
+    &-left-btn,&-right-btn{
+      display: block;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      float: left;
+    }
+    &-right-btn{
+      float: right;
+    }
+    &-content{
+      text-align: left;
+      width: 100%;
+      overflow: hidden;
+      transition: 0.4s;
+      &.week{
+        max-height: 150px;
+        min-height: 70px;
+      }
+      &.month{
+        max-height: 510px;
+        min-height: 495px;
+      }
+      li{
+        display: inline-block;
+        width: 14.25%;
+        text-align: center;
+        margin: 5px 0;
+        span{
+          display: inline-block;
+          width: 75px;
+          line-height: 75px;
+          text-align: center;
+        }
+      }
+    }
+    &-week-wrapper{
+      margin: 10px 0;
+      white-space: nowrap;
+    }
+    &-day-wrapper{
+      display: flex;
+      width: 300%;
+      margin-left: -100%;
+    }
+    &-day-inner{
+      // display: inline-block;
+      flex: 1;
+      text-align: left;
+    }
+    &-day{
+      &.today{
+        span{
+          color: #fff;
+          background: hsla(0,0%,100%,.3);
+          border-radius: 50%;
+        }
+      }
+      &.past{
+        span{
+          color: #ccc8c8;
+        }
+      }
+      &.selected{
+        span{
+          color: #4b77b0;
+          background: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+    &-change{
+      width: 100%;
+      height: 40px;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAMAAACknt2MAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABaUExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////1/RXMoAAAAedFJOUwBmdGt4CSyAfQEVEAUCNG5ZXiANGSM9REtwUlAdYkYT4EEAAAC7SURBVHjabVFbAsQQDEQRLYq+n/e/5rbaTenu/CQxmCRDaGjJH7SBEqlY88s0TElCulnVb6ZWc3dGEWAxKWEWCOJK7QiFfhhdwGixkpz337znXJIEVQFDeSblAEWVCxsPXhy6RzB4Vt7JAK6qHAx3WRri8H3DleI9KrhUVVOqs740xV6txWmuS2a9JkSIAKtJ94LIN7exp6oV2zIPdphM/H2C/eWSnaKypjBZ8kI0LtqEyOSxnTeE9+kQHwSGCJDzPgfwAAAAAElFTkSuQmCC) 50% no-repeat;
+      background-size: 40px 20px;
+      transform: rotate(-180deg);
+      &.week{
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

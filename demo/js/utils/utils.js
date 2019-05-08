@@ -91,7 +91,7 @@ util.JPlaceHolder = {
     fix : function(){
         jQuery(':input[placeholder]').each(function(index, element) {
             var self = $(this), txt = self.attr('placeholder');
-            
+
             self.data("ori_type",self.attr("type"));
             if(self.attr("type") == "password"){
             	if($.support.leadingWhitespace){
@@ -129,14 +129,14 @@ util.JPlaceHolder = {
  * 格式化数字,千分位逗号
  */
 util.numFormat = function(nStr){
-    nStr += '';  
-    x = nStr.split('.');  
-    x1 = x[0];  
-    x2 = x.length > 1 ? '.' + x[1] : '';  
-    var rgx = /(\d+)(\d{3})/;  
-    while (rgx.test(x1)) {  
-        x1 = x1.replace(rgx, '$1' + ',' + '$2');  
-    }  
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
     return x1 + x2;
 }
 
@@ -298,12 +298,12 @@ alert(window.val+json.val)
 //////////////////////////////
 
 //////对象深度复制
-var deepCopy= function(source) { 
+var deepCopy= function(source) {
 var result={};
 for (var key in source) {
-      result[key] = typeof source[key]===’object’? deepCoyp(source[key]): source[key];
-   } 
-   return result; 
+      result[key] = typeof source[key]==='object'? deepCoyp(source[key]): source[key];
+   }
+   return result;
 }
 //////////////////
 
@@ -324,7 +324,7 @@ $.fn.goToTop = function(obj){
             options.static = false;
         },step: function(num){
             options.static = true;
-            options.eletop = num;        
+            options.eletop = num;
         }});
         options.fn();
     });
@@ -343,7 +343,7 @@ ie678 ='\v'=='v' ;
 ie678 = ('a~b'.split(/(~)/))[1] == "b"
 ie678 = 0.9.toFixed(0) == "0"
 IE8 = window.toStaticHTML
-IE9 = window.msPerformance 
+IE9 = window.msPerformance
 ie = !!document.recalc
 ie = !!window.VBArray
 ie = !!window.ActiveXObject
@@ -364,7 +364,7 @@ ie7 = ieVersion === 5.7
 ie6 = ieVersion === 5.6
 ie5 = ieVersion === 5.5
 //https://developer.mozilla.org/En/Windows_Media_in_Netscape
-netscape = !!window.GeckoActiveXObject 
+netscape = !!window.GeckoActiveXObject
 gecko  = !!window.netscape //包括firefox
 firefox = !!window.Components
 firefox = !!window.updateCommands
@@ -383,13 +383,13 @@ is360se = /360se/i.test(navigator.userAgent)
  * 简单的秒单位倒计时实现
 */
 util.countDown = function(op) {
-    
+
     if(!op || !op.obj || op.obj.length<1) return;
-    
+
     if(!(this instanceof util.countDown)) {
         return new util.countDown(op);
     }
-    
+
     var me = this;
     //TODO 去除Jquery的$.extend
     me.op = $.extend({
@@ -401,13 +401,13 @@ util.countDown = function(op) {
 
     me.st = new Date().getTime();
     me.span = me.st;
-    me.cur = me.op.start;   
+    me.cur = me.op.start;
     var _c = [];
 
     var _cd = function(){
-    
+
         me.op.obj[me.op.property](me.op.startEl + (me.cur<10&&me.cur>0 ? '0'+me.cur : me.cur) + me.op.endEl);
-        
+
         var _td = new Date(),
             _temp = _td.getTime(),
             _span = _temp - me.st;
@@ -435,15 +435,15 @@ util.countDown = function(op) {
  * 数字从小到大跑
  */
 util.numberSpark = function(obj, startEl, endEl, dot) {
-    
+
     var o = $(obj ? obj : '');
 
     if(o.length < 1) return;
-    
+
     if(!(this instanceof util.numberSpark)) {
         return new util.numberSpark(obj, startEl, endEl, dot);
     }
-        
+
     var that = this;
 
     that.obj = o,
@@ -535,5 +535,50 @@ function getUUID() {
     return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
   }
   return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
+}
+
+export function getTransformPropValue(v) {
+    return {
+      transform: v,
+      WebkitTransform: v,
+      MozTransform: v,
+    };
+  }
+
+export function getTransitionPropValue(v) {
+    return {
+        transition: v,
+        WebkitTransition: v,
+    };
+}
+
+export function getPxStyle(value, unit = 'px', vertical = false) {
+    const val = vertical ? `0px, ${value}${unit}, 0px` : `${value}${unit}, 0px, 0px`;
+    return `translate3d(${val})`;
+}
+
+export function setTransform(style, v) {
+    style.transform = v;
+    style.webkitTransform = v;
+    style.mozTransform = v;
+}
+
+export function setTransition(el, v) {
+    if (el) {
+        el.style.transition = v;
+        el.style.WebkitTransition = v;
+    }
+}
+
+export function setPxStyle(el, value, unit = 'px', vertical = false, useLeft = false) {
+    if (useLeft) {
+        if (vertical) {
+        el.style.top = `${value}${unit}`;
+        } else {
+        el.style.left = `${value}${unit}`;
+        }
+    } else {
+        setTransform(el.style, getPxStyle(value, unit, vertical));
+    }
 }
 
