@@ -1,0 +1,374 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: 'Microsoft YaHei', arial, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+[hidefocus],
+summary {
+  outline: 0;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+}
+sup,
+sub {
+  font-size: 83%;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+q:before,
+q:after {
+  content: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+label,
+summary {
+  cursor: default;
+}
+a,
+button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  outline: 0;
+}
+body * {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+input,
+textarea,
+select {
+  outline: none;
+  -webkit-appearance: none;
+  border: 0;
+}
+img {
+  vertical-align: middle;
+}
+body {
+  font-size: 12px;
+  background-color: #fff;
+  margin: 0;
+  color: #4c4c4c;
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+::-moz-placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+:-ms-input-placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+#left-panel {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  overflow: hidden;
+  pointer-events: none;
+  height: 300px;
+}
+#searchbox {
+  border-radius: 2px;
+  width: 425px;
+  position: relative;
+  z-index: 5;
+}
+#searchbox #searchbox-container {
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+  width: 368px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+}
+#searchbox #search-button {
+  pointer-events: auto;
+  background: url(../images/searchbox.png) no-repeat 0 -76px #3385ff;
+  width: 57px;
+  height: 38px;
+  float: left;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+}
+.searchbox-content {
+  width: 368px;
+  border-radius: 2px 0 0 2px;
+  background: #fff;
+}
+.searchbox-content:after {
+  font-size: 0;
+  zoom: 1;
+  content: ' ';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.searchbox-content .searchbox-content-common {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 329px;
+  height: 38px;
+}
+.searchbox-content .input-clear {
+  cursor: pointer;
+  position: absolute;
+  width: 27px;
+  height: 38px;
+  top: 0;
+  background: url(../images/searchbox.png) no-repeat 0 -114px #fff;
+  display: none;
+}
+#sole-searchbox-content {
+  position: relative;
+  display: none;
+}
+#sole-searchbox-content #sole-input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  padding: 9px 0;
+  border-left: 10px solid transparent;
+  border-right: 27px solid transparent;
+  line-height: 20px;
+  font-size: 16px;
+  height: 38px;
+  color: #333;
+  position: relative;
+  border-radius: 2px 0 0 2px;
+}
+#sole-searchbox-content .input-clear {
+  right: 39px;
+}
+#sole-searchbox-content .searchbox-content-button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  height: 38px;
+  width: 39px;
+  cursor: pointer;
+  position: relative;
+}
+#sole-searchbox-content .searchbox-content-button.right-button:before {
+  content: '';
+  position: absolute;
+  width: 38px;
+  left: 0;
+  top: 6px;
+  height: 26px;
+  border-left: 1px solid #eee;
+}
+#sole-searchbox-content .searchbox-content-button.route-button {
+  background: url(../images/searchbox.png) no-repeat 0 0;
+}
+#sole-searchbox-content .searchbox-content-button.cancel-button {
+  background: url(../images/searchbox.png) no-repeat 0 38px;
+}
+.route-searchbox-content {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-bottom-right-radius: 2px;
+}
+.route-header {
+  overflow: hidden;
+}
+.route-tabs {
+  position: relative;
+  border-bottom: 1px solid #a3c7ff;
+  color: #333;
+  text-decoration: none;
+}
+.route-tabs .tab-item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  float: left;
+  width: 25%;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  cursor: pointer;
+}
+.route-tabs .tab-item:hover {
+  color: #3385ff;
+}
+.route-tabs .tab-item span {
+  margin-left: 8px;
+}
+.route-tabs .tab-item i {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  background-image: url(../images//route-icon.png);
+  background-repeat: no-repeat;
+}
+.route-tabs .tab-item.bus-tab i {
+  width: 13px;
+  height: 15px;
+  background-position: 0 -34px;
+}
+.route-tabs .tab-item.drive-tab i {
+  width: 15px;
+  height: 14px;
+  background-position: 0 -68px;
+}
+.route-tabs .tab-item.walk-tab i {
+  width: 15px;
+  height: 17px;
+  background-position: 0 -100px;
+  top: 3px;
+}
+.route-tabs .tab-item.bike-tab i {
+  width: 18px;
+  height: 15px;
+  background-position: 0 -138px;
+  top: 3px;
+}

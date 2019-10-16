@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="map"></div>
+      <div id="left-panel">
+        <div id="searchbox" class="clearfix">
+          <div id="searchbox-container">
+            <div id="sole-searchbox-content" class="searchbox-content">
+              <input
+                id="sole-input"
+                class="searchbox-content-common"
+                type="text"
+                autocomplete="off"
+                maxlength="256"
+                placeholder="搜地点、查公交、找路线"
+                value=""
+              />
+              <div class="input-clear" title="清空"></div>
+              <div
+                class="searchbox-content-button right-button route-button"
+              ></div>
+            </div>
+            <div
+              id="route-searchbox-content"
+              class="searchbox-content route-searchbox-content bus"
+            >
+              <div class="route-header">
+                <div class="searchbox-content-common route-tabs">
+                  <div class="tab-item bus-tab" data-index="bus">
+                    <i></i><span>公交</span>
+                  </div>
+                  <div class="tab-item drive-tab" data-index="drive">
+                    <i></i><span>驾车</span>
+                  </div>
+                  <div class="tab-item walk-tab" data-index="walk">
+                    <i></i><span>步行</span>
+                  </div>
+                  <div class="tab-item bike-tab" data-index="bike">
+                    <i></i><span>骑行</span>
+                  </div>
+                  <div class="arrow-wrap"></div>
+                </div>
+                <div
+                  class="searchbox-content-button right-button cancel-button loading-button"
+                  data-title="关闭路线"
+                  data-tooltip="2"
+                ></div>
+              </div>
+              <div class="routebox">
+                <div class="searchbox-content-common routebox-content">
+                  <div class="routebox-revert" title="切换起终点">
+                    <div class="routebox-revert-icon"></div>
+                  </div>
+                  <div class="routebox-inputs">
+                    <div class="routebox-input route-start">
+                      <div class="route-input-icon"></div>
+                      <input
+                        autocomplete="off"
+                        maxlength="256"
+                        placeholder="输入起点或在图区上选点"
+                        class="route-start-input"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="input-clear"
+                        title="清空"
+                        style="display: none;"
+                      ></div>
+                      <div class="route-input-add-icon"></div>
+                    </div>
+                    <div class="routebox-input route-end">
+                      <div class="route-input-icon"></div>
+                      <input
+                        autocomplete="off"
+                        maxlength="256"
+                        placeholder="输入终点"
+                        class="route-end-input"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        class="input-clear"
+                        title="清空"
+                        style="display: none;"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="search-button"></button>
+        </div>
+      </div>
+      <div id="right-top"></div>
+      <div id="right-bottom"></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="http://api.map.baidu.com/api?v=3.0&ak=GAztfh2raLiZmztQbF0GvXrczv0AmEXR"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
