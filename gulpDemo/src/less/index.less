@@ -197,6 +197,24 @@ body {
   touch-action: none;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
 ::-webkit-input-placeholder {
   color: #aaa;
   font-size: 14px;
@@ -580,7 +598,7 @@ body {
   }
   .tool-item {
     float: left;
-    width: 108px;
+    width: 114px;
     line-height: 14px;
     padding: 6px 0;
     text-align: center;
@@ -589,6 +607,11 @@ body {
     cursor: pointer;
     position: relative;
     *zoom: 1;
+    &:last-child {
+      width: auto;
+      overflow: hidden;
+      float: none;
+    }
     &.active {
       background-color: #fff;
       position: relative;
@@ -680,6 +703,247 @@ body {
     .row {
       padding: 5px 0;
       line-height: 1.2;
+    }
+  }
+}
+
+.float-l {
+  float: left;
+}
+
+#right-top {
+  z-index: 4;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+#tool-container {
+  float: right;
+  margin-right: 6px;
+}
+.control-wrap {
+  .last {
+    border: 0 !important;
+  }
+  .left,
+  .right {
+    height: 34px;
+    background: #fff;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+    b {
+      float: left;
+      height: 21px;
+      display: inline-block;
+      border-right: 1px solid #eee;
+      top: 7px;
+      position: relative;
+    }
+    span {
+      float: left;
+      height: 34px;
+      width: 29px;
+      background-image: url(../images/tools.png);
+      background-repeat: no-repeat;
+      &.active {
+        background-color: #fff;
+      }
+    }
+    i {
+      float: left;
+      font-size: 12px;
+      font-style: normal;
+      height: 34px;
+      line-height: 34px;
+      display: inline-block;
+      &.active {
+        color: #579afc;
+      }
+    }
+  }
+  .control {
+    float: left;
+    padding-right: 12px;
+    line-height: 34px;
+    display: inline-block;
+    cursor: pointer;
+
+    em {
+      width: 7px;
+      height: 7px;
+      float: left;
+      margin-top: 13px;
+      margin-left: 5px;
+      background-image: url(../images/tools.png);
+      background-repeat: no-repeat;
+      background-position: -13px -17px;
+      &.active {
+        background-position: -12px -177px;
+      }
+    }
+    .traffic {
+      background-position: 1px -114px;
+    }
+    .boxopt {
+      padding-right: 7px;
+      background-position: -40px -116px;
+    }
+    &.active {
+      .traffic {
+        background-position: 1px -49px;
+      }
+      .boxopt {
+        background-position: -40px -48px;
+      }
+      span {
+        background-color: #fff;
+      }
+      i {
+        color: #579afc;
+      }
+      em {
+        background-position: -12px -177px;
+      }
+    }
+  }
+  .detail-box {
+    position: absolute;
+    width: 86px;
+    background: #fff;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+    top: 34px;
+    right: 6px;
+    float: left;
+    display: none;
+    z-index: 80000;
+  }
+  .boxinfo {
+    list-style-type: none;
+    li {
+      box-sizing: border-box;
+      width: 100%;
+      cursor: pointer;
+      height: 34px;
+      line-height: 34px;
+      padding-left: 7px;
+      .measure {
+        background-position: -80px -117px;
+      }
+      .mark {
+        background-position: -80px -168px;
+      }
+      .share {
+        background-position: -163px -117px;
+      }
+    }
+  }
+  .map-measure:hover {
+    .measure {
+      background-position: -80px -49px;
+    }
+    i {
+      color: #579afc;
+    }
+  }
+  .map-mark:hover {
+    .mark {
+      background-position: -40px -168px;
+    }
+    i {
+      color: #579afc;
+    }
+  }
+  .map-share:hover {
+    .share {
+      background-position: -163px -51px;
+    }
+    i {
+      color: #579afc;
+    }
+  }
+}
+#right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#mapType {
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  width: 110px;
+  background-color: rgba(255, 255, 255, 0);
+  .mapTypeCard {
+    height: 60px;
+    width: 86px;
+    position: absolute;
+    border-radius: 2px;
+    top: 10px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border: 1px solid rgba(153, 153, 153, 0.42);
+    background: url(../images/shadow.png) no-repeat 0 0;
+    background-size: 86px 240px;
+    -webkit-transition-property: right, background-image;
+    transition-property: right, background-image;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    &:hover {
+      border: 1px solid #3385ff;
+      span {
+        background-color: #3385ff;
+      }
+    }
+    span {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: inline-block;
+      padding: 3px 3px 2px 4px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #fff;
+      border-top-left-radius: 2px;
+    }
+  }
+  .normal {
+    z-index: 1;
+    background-position: 0 0;
+    right: 20px;
+  }
+  .earth {
+    right: 15px;
+    z-index: 2;
+    background-position: 0 -181px;
+  }
+  .panorama {
+    z-index: 3;
+    right: 10px;
+    background-image: url(../images/maptype.png);
+    background-position: 0 -121px;
+    border-left: 1px solid rgba(153, 153, 153, 0.6);
+  }
+}
+.expand {
+  #mapType {
+    width: 298px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    .mapTypeCard {
+      border: 1px solid rgba(255, 255, 255, 0);
+      background-image: url(../images/maptype.png);
+      &:hover {
+        border: 1px solid #3385ff;
+      }
+    }
+    .normal {
+      right: 202px;
+    }
+    .earth {
+      right: 106px;
     }
   }
 }

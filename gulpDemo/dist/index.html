@@ -35,9 +35,7 @@
               data-current="bus"
             >
               <div class="route-header">
-                <div
-                  class="searchbox-content-common route-tabs"
-                >
+                <div class="searchbox-content-common route-tabs">
                   <div class="tab-item bus-tab" data-index="bus">
                     <i></i><span>公交</span>
                   </div>
@@ -280,8 +278,49 @@
           </li>
         </ul>
       </div>
-      <div id="right-top"></div>
-      <div id="right-bottom"></div>
+      <div id="right-top">
+        <div id="tool-container">
+          <div id="controlWrap" class="control-wrap clearfix">
+            <div class="left float-l">
+              <div class="control" data-index="1">
+                <span class="traffic"></span>
+                <i>成都市</i>
+              </div>
+              <b></b>
+              <div class="control" data-index="2">
+                <span class="traffic"></span>
+                <i>路况</i>
+              </div>
+              <b></b>
+              <div class="control" data-index="3">
+                <span class="boxopt"></span>
+                <i>工具箱</i>
+                <em></em>
+              </div>
+              <div id="detail-box" class="detail-box">
+                <ul class="boxinfo">
+                  <li class="map-measure">
+                    <span class="last measure"></span><i>测距</i>
+                  </li>
+                  <li class="map-mark">
+                    <span class="last mark"></span><i>标记</i>
+                  </li>
+                  <li class="map-share">
+                    <span class="last share"></span><i>分享</i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right-bottom">
+        <div id="mapType">
+          <div class="mapTypeCard normal"><span>地图</span></div>
+          <div class="mapTypeCard earth"><span>地球</span></div>
+          <div class="mapTypeCard panorama"><span>全景</span></div>
+        </div>
+      </div>
     </div>
     <script
       type="text/javascript"

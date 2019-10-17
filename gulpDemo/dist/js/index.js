@@ -64,14 +64,13 @@
     showById('sole-searchbox-content');
   }
 
-  function changeToolBar(index) {
-    var toolItems = cateFilter.querySelectorAll('.tool-item');
-    for (var i = 0; i < toolItems.length; i++) {
-      var toolItem = toolItems[i];
-      if (toolItem.dataset.index == index && !hasClass(toolItem, 'active')) {
-        addClass(toolItem, 'active');
+  function changeTabs(elems, index) {
+    for (var i = 0; i < elems.length; i++) {
+      var elem = elems[i];
+      if (elem.dataset.index == index && !hasClass(elem, 'active')) {
+        addClass(elem, 'active');
       } else {
-        removeClass(toolItem, 'active');
+        removeClass(elem, 'active');
       }
     }
   }
@@ -104,7 +103,10 @@
         } else {
           showById('select-pannel');
         }
-        changeToolBar(target.dataset.index);
+        changeTabs(
+          cateFilter.querySelectorAll('.tool-item'),
+          target.dataset.index
+        );
         break;
       }
       target = target.parentNode;
@@ -125,5 +127,28 @@
       }
       target = target.parentNode;
     }
+  });
+  var controls = document.getElementById('controlWrap');
+  controls.addEventListener('click', function(event) {
+    var target = event.target;
+    while (target !== controls) {
+      if (hasClass(target, 'control')) {
+        if (hasClass(target, 'active')) {
+          hideById('detail-box');
+        } else {
+          showById('detail-box');
+        }
+        changeTabs(controls.querySelectorAll('.control'), target.dataset.index);
+        break;
+      }
+      target = target.parentNode;
+    }
+  });
+  var rightBottom = document.getElementById('right-bottom');
+  rightBottom.addEventListener('mouseenter', function(event) {
+    addClass(rightBottom, 'expand');
+  });
+  rightBottom.addEventListener('mouseleave', function(event) {
+    removeClass(rightBottom, 'expand');
   });
 })();

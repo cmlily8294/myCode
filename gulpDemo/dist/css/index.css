@@ -175,6 +175,20 @@ body {
   -ms-touch-action: none;
   touch-action: none;
 }
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
 ::-webkit-input-placeholder {
   color: #aaa;
   font-size: 14px;
@@ -577,7 +591,7 @@ body {
 }
 #cateFilter .tool-item {
   float: left;
-  width: 108px;
+  width: 114px;
   line-height: 14px;
   padding: 6px 0;
   text-align: center;
@@ -585,6 +599,11 @@ body {
   cursor: pointer;
   position: relative;
   *zoom: 1;
+}
+#cateFilter .tool-item:last-child {
+  width: auto;
+  overflow: hidden;
+  float: none;
 }
 #cateFilter .tool-item.active {
   background-color: #fff;
@@ -798,4 +817,239 @@ body {
 .search-item .search-result .row {
   padding: 5px 0;
   line-height: 1.2;
+}
+.float-l {
+  float: left;
+}
+#right-top {
+  z-index: 4;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+#tool-container {
+  float: right;
+  margin-right: 6px;
+}
+.control-wrap .last {
+  border: 0 !important;
+}
+.control-wrap .left,
+.control-wrap .right {
+  height: 34px;
+  background: #fff;
+  border-radius: 0 2px 2px 0;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+}
+.control-wrap .left b,
+.control-wrap .right b {
+  float: left;
+  height: 21px;
+  display: inline-block;
+  border-right: 1px solid #eee;
+  top: 7px;
+  position: relative;
+}
+.control-wrap .left span,
+.control-wrap .right span {
+  float: left;
+  height: 34px;
+  width: 29px;
+  background-image: url(../images/tools.png);
+  background-repeat: no-repeat;
+}
+.control-wrap .left span.active,
+.control-wrap .right span.active {
+  background-color: #fff;
+}
+.control-wrap .left i,
+.control-wrap .right i {
+  float: left;
+  font-size: 12px;
+  font-style: normal;
+  height: 34px;
+  line-height: 34px;
+  display: inline-block;
+}
+.control-wrap .left i.active,
+.control-wrap .right i.active {
+  color: #579afc;
+}
+.control-wrap .control {
+  float: left;
+  padding-right: 12px;
+  line-height: 34px;
+  display: inline-block;
+  cursor: pointer;
+}
+.control-wrap .control em {
+  width: 7px;
+  height: 7px;
+  float: left;
+  margin-top: 13px;
+  margin-left: 5px;
+  background-image: url(../images/tools.png);
+  background-repeat: no-repeat;
+  background-position: -13px -17px;
+}
+.control-wrap .control em.active {
+  background-position: -12px -177px;
+}
+.control-wrap .control .traffic {
+  background-position: 1px -114px;
+}
+.control-wrap .control .boxopt {
+  padding-right: 7px;
+  background-position: -40px -116px;
+}
+.control-wrap .control.active .traffic {
+  background-position: 1px -49px;
+}
+.control-wrap .control.active .boxopt {
+  background-position: -40px -48px;
+}
+.control-wrap .control.active span {
+  background-color: #fff;
+}
+.control-wrap .control.active i {
+  color: #579afc;
+}
+.control-wrap .control.active em {
+  background-position: -12px -177px;
+}
+.control-wrap .detail-box {
+  position: absolute;
+  width: 86px;
+  background: #fff;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.15);
+  top: 34px;
+  right: 6px;
+  float: left;
+  display: none;
+  z-index: 80000;
+}
+.control-wrap .boxinfo {
+  list-style-type: none;
+}
+.control-wrap .boxinfo li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 7px;
+}
+.control-wrap .boxinfo li .measure {
+  background-position: -80px -117px;
+}
+.control-wrap .boxinfo li .mark {
+  background-position: -80px -168px;
+}
+.control-wrap .boxinfo li .share {
+  background-position: -163px -117px;
+}
+.control-wrap .map-measure:hover .measure {
+  background-position: -80px -49px;
+}
+.control-wrap .map-measure:hover i {
+  color: #579afc;
+}
+.control-wrap .map-mark:hover .mark {
+  background-position: -40px -168px;
+}
+.control-wrap .map-mark:hover i {
+  color: #579afc;
+}
+.control-wrap .map-share:hover .share {
+  background-position: -163px -51px;
+}
+.control-wrap .map-share:hover i {
+  color: #579afc;
+}
+#right-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#mapType {
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  width: 110px;
+  background-color: rgba(255, 255, 255, 0);
+}
+#mapType .mapTypeCard {
+  height: 60px;
+  width: 86px;
+  position: absolute;
+  border-radius: 2px;
+  top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid transparent;
+  border: 1px solid rgba(153, 153, 153, 0.42);
+  background: url(../images/shadow.png) no-repeat 0 0;
+  background-size: 86px 240px;
+  -webkit-transition-property: right, background-image;
+  transition-property: right, background-image;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+#mapType .mapTypeCard:hover {
+  border: 1px solid #3385ff;
+}
+#mapType .mapTypeCard:hover span {
+  background-color: #3385ff;
+}
+#mapType .mapTypeCard span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 3px 3px 2px 4px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  border-top-left-radius: 2px;
+}
+#mapType .normal {
+  z-index: 1;
+  background-position: 0 0;
+  right: 20px;
+}
+#mapType .earth {
+  right: 15px;
+  z-index: 2;
+  background-position: 0 -181px;
+}
+#mapType .panorama {
+  z-index: 3;
+  right: 10px;
+  background-image: url(../images/maptype.png);
+  background-position: 0 -121px;
+  border-left: 1px solid rgba(153, 153, 153, 0.6);
+}
+.expand #mapType {
+  width: 298px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.expand #mapType .mapTypeCard {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-image: url(../images/maptype.png);
+}
+.expand #mapType .mapTypeCard:hover {
+  border: 1px solid #3385ff;
+}
+.expand #mapType .normal {
+  right: 202px;
+}
+.expand #mapType .earth {
+  right: 106px;
 }
