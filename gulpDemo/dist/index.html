@@ -25,15 +25,19 @@
               />
               <div class="input-clear" title="清空"></div>
               <div
+                id="sole-searchbox-button"
                 class="searchbox-content-button right-button route-button"
               ></div>
             </div>
             <div
               id="route-searchbox-content"
               class="searchbox-content route-searchbox-content bus"
+              data-current="bus"
             >
               <div class="route-header">
-                <div class="searchbox-content-common route-tabs">
+                <div
+                  class="searchbox-content-common route-tabs"
+                >
                   <div class="tab-item bus-tab" data-index="bus">
                     <i></i><span>公交</span>
                   </div>
@@ -49,6 +53,7 @@
                   <div class="arrow-wrap"></div>
                 </div>
                 <div
+                  id="route-searchbox-button"
                   class="searchbox-content-button right-button cancel-button loading-button"
                   data-title="关闭路线"
                   data-tooltip="2"
@@ -100,6 +105,180 @@
           </div>
           <button id="search-button"></button>
         </div>
+        <ul id="cardlist" class="cardlist">
+          <li id="card" class="card animated-card">
+            <div class="poi-wrapper">
+              <div class="poi-filter">
+                <div id="cateFilter">
+                  <ul class="toolbar clearfix">
+                    <li class="tool-item" data-index="1">
+                      <label>搜索条件1</label><i class="icon-cater arrow"></i>
+                    </li>
+                    <li class="tool-item botn-line" data-index="2">
+                      <label>搜索条件2</label><i class="icon-cater arrow"></i>
+                    </li>
+                    <li class="tool-item" data-index="3">
+                      <label>搜索条件3</label><i class="icon-cater arrow"></i>
+                    </li>
+                  </ul>
+                  <div id="select-pannel" class="select-pannel">搜索条件</div>
+                </div>
+              </div>
+              <ul class="poilist">
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-1"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果1</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-2"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果2</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-3"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果3</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-4"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果4</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-5"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果5</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-6"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果6</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-7"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果7</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-8"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果8</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-9"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果9</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="search-item">
+                  <div class="clearfix">
+                    <div class="col-l">
+                      <a href="javascript:void(0)" class="no-10"></a>
+                    </div>
+                    <div class="col-r">
+                      <div class="img-wrap">
+                        <img src="./images/thumb.jpeg" alt="" />
+                      </div>
+                    </div>
+                    <div class="search-result">
+                      <div class="row">搜索结果10</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
       <div id="right-top"></div>
       <div id="right-bottom"></div>

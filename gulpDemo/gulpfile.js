@@ -104,10 +104,10 @@ gulp.task('watchless', function() {
     var combined = combiner.obj([
       gulp.src(paths.srcPath),
       // sourcemaps.init(),
+      less(),
       autoprefixer({
         browsers: 'last 2 versions'
       }),
-      less(),
       // minifycss(),
       // sourcemaps.write('./'),
       gulp.dest(paths.distDir)
@@ -120,10 +120,10 @@ gulp.task('lesscss', function() {
   var combined = combiner.obj([
     gulp.src('src/less/**/*.less'),
     // sourcemaps.init(),
+    less(),
     autoprefixer({
       browsers: 'last 2 versions'
     }),
-    less(),
     // minifycss(),
     // sourcemaps.write('./'),
     gulp.dest('dist/css/')
